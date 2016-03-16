@@ -2,18 +2,17 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 #down{
-  border-left: 25px solid white;
+  border-left: 25px solid black;
   border-top: 25px solid #2D89EF;
-  border-right: 25px solid white;
+  border-right: 25px solid black;
   display: inline-block;
 }
 
 #up{
-  border-top: 25px solid white;
-  border-right: 25px solid #2D89EF;
-  border-bottom: 25px solid white;
+  border-left: 25px solid black;
+  border-bottom: 25px solid #2D89EF;
+  border-right: 25px solid black;
   display: inline-block;
-}
 
 #nav-level{
   position: relative;
