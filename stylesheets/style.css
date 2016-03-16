@@ -13,12 +13,13 @@
   border-bottom: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
+}
 
 #nav-level{
   position: relative;
   left: 50%;
-  right: 50%;
-  margin-left: -220px;
+  top: 50%;
+  margin-left: -250px;
   margin-top: -20px;
   background-color: black;
 }
@@ -106,4 +107,8 @@
                0 0 50px #FFDD1B,
                0 0 75px #FFDD1B;
   }
+}
+
+.level{
+	height:100vh;
 }
