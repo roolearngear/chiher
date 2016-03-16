@@ -1,17 +1,41 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
+#down{
+  border-left: 25px solid white;
+  border-top: 25px solid #2D89EF;
+  border-right: 25px solid white;
+  display: inline-block;
+}
+
+#up{
+  border-top: 25px solid white;
+  border-right: 25px solid #2D89EF;
+  border-bottom: 25px solid white;
+  display: inline-block;
+}
+
+#nav-level{
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -220px;
+  margin-top: -20px;
+  background-color: black;
+}
+
 #nav-level a{
   color:#337AB7;
-  font-family:PressStart;
+  font-family: 'Press Start 2P', cursive;
   font-size: 30px;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 #nav-level a:hover{
   -webkit-animation: shiny 1.5s ease-in-out infinite alternate;
   -moz-animation: shiny 1.5s ease-in-out infinite alternate;
   animation: shiny 1.5s ease-in-out infinite alternate; 
   text-decoration: none;
+  color: white;
 }
 
 
