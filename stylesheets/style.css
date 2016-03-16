@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 #nav-level a{
-  color:#FFDD1B;
-  font-family:Pacifico;
+  color:#337AB7;
+  font-family:PressStart;
+  font-size: 30px;
+  padding-left: 20px;
 }
 #nav-level a:hover{
   -webkit-animation: shiny 1.5s ease-in-out infinite alternate;
   -moz-animation: shiny 1.5s ease-in-out infinite alternate;
-  animation: shiny 1.5s ease-in-out infinite alternate;
+  animation: shiny 1.5s ease-in-out infinite alternate; 
+  text-decoration: none;
 }
 
 
