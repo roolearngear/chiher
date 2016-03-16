@@ -6,6 +6,7 @@
   border-top: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
+  padding-left: 0px;
 }
 
 #up{
@@ -13,7 +14,10 @@
   border-bottom: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
+  padding-left: 0px;
 }
+
+
 
 #nav-level{
   position: relative;
@@ -22,6 +26,7 @@
   margin-left: -250px;
   margin-top: -20px;
   background-color: black;
+  width: 600px;
 }
 
 #nav-level a{
@@ -30,6 +35,7 @@
   font-size: 30px;
   padding-left: 50px;
 }
+
 #nav-level a:hover{
   -webkit-animation: shiny 1.5s ease-in-out infinite alternate;
   -moz-animation: shiny 1.5s ease-in-out infinite alternate;
