@@ -112,3 +112,7 @@ function setPreview(view) {
 		'0px -'+((view-1)*previewHeight)+'px'
 	});
 }
+
+$(function(){
+
+});
