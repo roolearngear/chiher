@@ -6,7 +6,6 @@
   border-top: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
-  padding-left: 0px;
 }
 
 #up{
@@ -14,26 +13,32 @@
   border-bottom: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
-  padding-left: 0px;
 }
 
-
+#firstfloor{
+  background-color:white;
+  background-image: url(../img/logo.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;    
+  background-position: center;
+  background-size: cover;
+}
 
 #nav-level{
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -250px;
+  margin-left: -350px;
   margin-top: -20px;
   background-color: black;
-  width: 600px;
+  width: 700px;
 }
 
 #nav-level a{
   color:#337AB7;
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 #nav-level a:hover{
