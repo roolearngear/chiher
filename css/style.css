@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+#down{
+  border-left: 25px solid black;
+  border-top: 25px solid #2D89EF;
+  border-right: 25px solid black;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+#up{
+  border-left: 25px solid black;
+  border-bottom: 25px solid #2D89EF;
+  border-right: 25px solid black;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+
+
+#nav-level{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -20px;
+  background-color: black;
+}
+
+#nav-level a{
+  color:#337AB7;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+#nav-level a:hover{
+  -webkit-animation: shiny 1.5s ease-in-out infinite alternate;
+  -moz-animation: shiny 1.5s ease-in-out infinite alternate;
+  animation: shiny 1.5s ease-in-out infinite alternate; 
+  text-decoration: none;
+  color: white;
+}
+
+#header{
+  background-color: #E1E1E1;
+  height: 5vh;
+  position: fixed;
+  width: 100%
+}
+
+/*keyframe*/
+@-webkit-keyframes shiny {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFDD1B,
+               0 0 70px  #FFDD1B,
+               0 0 80px  #FFDD1B,
+               0 0 100px #FFDD1B,
+               0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFDD1B,
+               0 0 35px #FFDD1B,
+               0 0 40px #FFDD1B,
+               0 0 50px #FFDD1B,
+               0 0 75px #FFDD1B;
+  }
+}
+
+@-moz-keyframes shiny {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFDD1B,
+               0 0 70px  #FFDD1B,
+               0 0 80px  #FFDD1B,
+               0 0 100px #FFDD1B,
+               0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFDD1B,
+               0 0 35px #FFDD1B,
+               0 0 40px #FFDD1B,
+               0 0 50px #FFDD1B,
+               0 0 75px #FFDD1B;
+  }
+}
+
+@keyframes shiny {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFDD1B,
+               0 0 70px  #FFDD1B,
+               0 0 80px  #FFDD1B,
+               0 0 100px #FFDD1B,
+               0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFDD1B,
+               0 0 35px #FFDD1B,
+               0 0 40px #FFDD1B,
+               0 0 50px #FFDD1B,
+               0 0 75px #FFDD1B;
+  }
+}
+
+.level{
+	height:100vh;
+}
