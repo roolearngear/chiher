@@ -21,6 +21,7 @@
 #nav-level{
   position:absolute;
   margin:auto;
+  margin-left: 35vw;
   background-color: black;
 }
 
@@ -58,7 +59,7 @@
 .flipbook-viewport .container{
   position:absolute;
   top:20%;
-  left:20%;
+  left:22%;
   margin:auto;
 }
 
