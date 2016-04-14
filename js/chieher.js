@@ -2,7 +2,10 @@ $(function(){
 	console.log('test');
 	loadApp();
 
+
 });
+
+$(window).mousewheel
 
 function loadApp() {
 
