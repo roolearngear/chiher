@@ -15,15 +15,6 @@
   display: inline-block;
 }
 
-#firstfloor{
-  background-color:white;
-  background-image: url(../img/logo.jpg); 
-  background-repeat: no-repeat;
-  background-attachment: fixed;    
-  background-position: center;
-  background-size: cover;
-}
-
 #nav-level{
   position: relative;
   left: 50%;
@@ -47,7 +38,6 @@
   text-decoration: none;
   color: white;
 }
-
 
 /*keyframe*/
 @-webkit-keyframes shiny {
@@ -121,4 +111,25 @@
 
 .level{
 	height:100vh;
+}
+
+#rooftop{
+  background-image: url(img/workshop.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: antiquewhite;
+}
+
+#fourthfloor{
+  background-image: url(img/infographic.png);
+  background-repeat: no-repeat;
+}
+
+#firstfloor{
+  background-color:white;
+  background-image: url(../img/logo.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;    
+  background-position: center;
+  background-size: cover;
 }
