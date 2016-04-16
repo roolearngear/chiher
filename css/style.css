@@ -16,13 +16,22 @@
   display: inline-block;
 }
 
+#rooftop{
+  background-image: url(../img/workshop.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: antiquewhite;
+}
 
+#fourthfloor{
+  background-image: url(../img/infographic.png);
+  background-repeat: no-repeat;
+}
 
 #nav-level{
   position:absolute;
   margin:auto;
   margin-left: 35vw;
-  background-color: black;
 }
 
 #nav-level a{
@@ -41,7 +50,7 @@
 }
 
 .level{
-  height:100vh;
+  height:85vh;
 }
 
 #header{
