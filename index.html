@@ -1,92 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en-us"> <!--<![endif]-->
+<head>
     <meta charset="UTF-8">
-    <title>chieher</title>
+    <title>chyiher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-  </head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/turn.min.js"></script>
+    <script type="text/javascript" src="js/animatescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/chieher.js"></script>   
+
+</head>
   <body>
-    <script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <div  id="header" style="background-color: #d9edf7;height: 5vh;position: fixed;width: 100%" class="navbar navbar-fixed-top">
-      <div class="navbar-header" id="nav-level">
-        <a href="#" id="down"></a>
-        <a href="#firstfloor">1</a>
-        <a href="#secondfloor">2</a>
-        <a href="#thirdfloor">3</a>
-        <a href="#fourthfloor">4</a>
-        <a href="#rooftop">R</a>
+    <div  id="header" class="navbar navbar-default navbar-fixed-top">
+      <div id="nav-level" class="navbar-header">
+        <a href="#" id="down" style="margin-left: 0vw"></a>
+        <a href="#" onclick="$('#firstfloor').animatescroll();">1</a>
+        <a href="#" onclick="$('#secondfloor').animatescroll();">2</a>
+        <a href="#" onclick="$('#thirdfloor').animatescroll();">3</a>
+        <a href="#" onclick="$('#fourthfloor').animatescroll();">4</a>
+        <a href="#" onclick="$('#rooftop').animatescroll();">R</a>
         <a href="#" id="up"></a>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div id="rooftop" class="col-md-12 level">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox" style="left:30%">
-				<div class="item active">
-					<img src="img/carousel1.jpg" alt="" class="img-responsive img-rounded">
-				</div>
-				<div class="item">
-					<img src="img/carousel2.jpg" alt="" class="img-responsive">
-				</div>
-				<div class="item">
-					<img src="img/carousel3.jpg" alt="" class="img-responsive">
-				</div>
-				<div class="item">
-					<img src="img/carousel4.jpg" alt="" class="img-responsive">
-				</div>
-			</div>
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-			</a>
-			</div>
+        <div id="rooftop" style="background-color:#1bbc9b;" class="col-md-12 level">
+          <div class="flipbook-viewport" style="display: block;">
+            <div class="container">
+              <div class="flipbook">
+                <div style="background-image: url(pages/1.jpg)"></div>
+                <div style="background-image: url(pages/2.jpg)"></div>
+                <div style="background-image: url(pages/3.jpg)"></div>
+                <div style="background-image: url(pages/4.jpg)"></div>
+                <div style="background-image: url(pages/5.jpg)"></div>
+                <div style="background-image: url(pages/6.jpg)"></div>
+                <div style="background-image: url(pages/7.jpg)"></div>
+                <div style="background-image: url(pages/8.jpg)"></div>
+                <div style="background-image: url(pages/9.jpg)"></div>
+                <div style="background-image: url(pages/10.jpg)"></div>
+                <div style="background-image: url(pages/11.jpg)"></div>
+                <div style="background-image: url(pages/12.jpg)"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div id="fourthfloor" style="background-color:#3498db;" class="col-md-12 level">third floor</div>
+        <div id="fourthfloor" style="background-image: url(img/infographic.png);background-repeat: no-repeat;" class="col-md-12 level">
+        
+        </div>
       </div>
       <div class="row">
-        <div id="thirdfloor" style="background-color:white;" class="col-md-12 level">third floor</div>
+        <div id="thirdfloor" style="background-image: url(img/mechanical-engine.jpg);opacity: 0.5;" class="col-md-12 level">third floor</div>
       </div>
       <div class="row">
         <div id="secondfloor" style="background-color:#3498db;" class="col-md-12 level">second floor</div>
       </div>
       <div class="row">
-        <div id="firstfloor" style="" class="col-md-12 level">
+        <div id="firstfloor" style="background-color:white;" class="col-md-12 level">
           <div>
+          <h2>About Us</h2>
            <p>1998年成立於澎湖馬公，以銷售「服務」為初始利基。為澎湖居民提供最在地的電梯保養維修，以及各種電器設備的服務諮詢，開始電梯服務事業。現今，本公司不僅是澎湖本島最主要的電梯服務公司之一，並延展服務到澎湖的離島七美、吉貝與望安等偏遠地區，做到真正的服務便民。</p>
            <p>2003年，基於對技術提升的要求以及業務的擴展需要，開始投入電梯控制系統的「研發」與「合作」銷售。一方面開發以客梯為主的電梯控制系統【SCH-168】，另一方面與電梯相關同業合作，互補互利以擴展業務並與國際接軌，目前服務的客戶不僅侷限於臺灣本土，更將系統推廣到亞洲地區的澳洲、新加坡、日本，中東地區的科威特、杜拜以及非洲的奈及利亞等國家，而且運轉數量正在穩定的持續增加中。</p>
            <p>2004年接續開發的【SCH-568】家庭梯控制系統，在台灣的銷售數量更突破千台以上。其禾(宜禾)公司本著「安全運轉」、「簡單操作」為基礎，研發製造最適合客戶需求的客製化控制系統。目標是要將「服務」與技術隨客戶延伸至世界各地。</p> 
           </div>
         </div>
       </div>
-
-
- 
     </div>
-
-  
   </body>
 </html>
