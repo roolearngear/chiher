@@ -1,7 +1,16 @@
 $(function(){
 	console.log('test');
 	loadApp();
-
+	$('.img-lightbox').on('click', function () {
+			$('.lightbox, #public-photobox').fadeIn(0);
+			$('#public-photobox img').attr('src', $(this).attr('src'));
+			//要先把heading 清掉
+			$('#public-photobox .panel-heading').append($(this).attr('alt'));
+		});
+	$('.lightbox').click(function () {
+		$(this).fadeOut(0);
+		$('#public-photobox').fadeOut(0);
+	})
 
 });
 
