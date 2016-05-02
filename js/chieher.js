@@ -1,20 +1,27 @@
 $(function(){
-	console.log('test');
 	loadApp();
 	$('.img-lightbox').on('click', function () {
 			$('.lightbox, #public-photobox').fadeIn(0);
 			$('#public-photobox img').attr('src', $(this).attr('src'));
-			//要先把heading 清掉
-			$('#public-photobox .panel-heading').append($(this).attr('alt'));
+			$('#public-photobox .panel-heading').html($(this).attr('alt'));
 		});
 	$('.lightbox').click(function () {
 		$(this).fadeOut(0);
 		$('#public-photobox').fadeOut(0);
-	})
+	});
+	var num_row = $('.row').length;
+	var mousewheel_count = 0;
+	$(window).on('mousewheel',function(e) {
+		if(e.deltaY == -1 && mousewheel_count<num_row)
+			mousewheel_count++;
+		else if(e.deltaY == 1 && mousewheel_count>1) 
+			mousewheel_count--;
+		console.log(mousewheel_count);
 
+	});
 });
 
-$(window).mousewheel
+
 
 function loadApp() {
 
