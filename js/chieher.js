@@ -1,23 +1,33 @@
 $(function(){
 	loadApp();
-	$('.img-lightbox').on('click', function () {
-			$('.lightbox, #public-photobox').fadeIn(0);
+	
+	//var num_row = $('.row').length;
+	//var mousewheel_count = 0;
+	var thirdFloorThresh = $('#thirdfloor').height() + 400;
+	//var scrollHeight = $('#thirdfloor').prop('scrollHeight');
+	// $(window).on('mousewheel',function(e) {
+	// 	if(e.deltaY == -1 && mousewheel_count<num_row)
+	// 		mousewheel_count++;
+	// 	else if(e.deltaY == 1 && mousewheel_count>1) 
+	// 		mousewheel_count--;
+	// 	//console.log(mousewheel_count);
+	// //	console.log(rooftopHeight,scrollHeight);
+
+	// });
+
+	$(window).scroll(function(){
+		var $this = $(this);
+		if($this.scrollTop()>thirdFloorThresh) //啟動三樓動畫
+			$('#thirdfloor img').attr('class',"animated bounceInLeft img-thumbnail img-lightbox");
+		$('.img-lightbox').on('click', function () {
+			$('.lightbox, #public-photobox').fadeIn(1000);
 			$('#public-photobox img').attr('src', $(this).attr('src'));
 			$('#public-photobox .panel-heading').html($(this).attr('alt'));
 		});
-	$('.lightbox').click(function () {
-		$(this).fadeOut(0);
-		$('#public-photobox').fadeOut(0);
-	});
-	var num_row = $('.row').length;
-	var mousewheel_count = 0;
-	$(window).on('mousewheel',function(e) {
-		if(e.deltaY == -1 && mousewheel_count<num_row)
-			mousewheel_count++;
-		else if(e.deltaY == 1 && mousewheel_count>1) 
-			mousewheel_count--;
-		console.log(mousewheel_count);
-
+		$('.lightbox').click(function () {
+			$(this).fadeOut(1000);
+			$('#public-photobox').fadeOut(1000);
+		});
 	});
 });
 
