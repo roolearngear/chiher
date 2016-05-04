@@ -19,6 +19,12 @@ $(function(){
 		var $this = $(this);
 		if($this.scrollTop()>thirdFloorThresh) //啟動三樓動畫
 			$('#intro img').attr('class',"animated bounceInLeft img-thumbnail img-lightbox");
+		$('img-lightbox').mouseover(function (argument) {
+			$(this).css('opacity',1);
+		});
+		$('img-lightbox').mouseout(function(){
+			$(this).css('opacity',0.7);
+		});
 		$('.img-lightbox').on('click', function () {
 			$('#intro').animatescroll();
 			$('.lightbox, #public-photobox').fadeIn(1000);
