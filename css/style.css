@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 
-#down{
+/*#down{
   border-left: 25px solid black;
   border-top: 25px solid #2D89EF;
   border-right: 25px solid black;
@@ -14,7 +14,7 @@
   border-bottom: 25px solid #2D89EF;
   border-right: 25px solid black;
   display: inline-block;
-}
+}*/
 
 #rooftop{
   background-image: url(../img/workshop.jpg);
@@ -23,12 +23,12 @@
   background-color: antiquewhite;
 }
 
-#fourthfloor{
-  background-image: url(../img/infographic.png);
-  background-repeat: no-repeat;
+#product{
+  /*background-image: url(../img/infographic.png);
+  background-repeat: no-repeat;*/
 }
 
-#nav-level{
+/*#nav-level{
   position:absolute;
   margin:auto;
   margin-left: 35vw;
@@ -47,7 +47,7 @@
   animation: shiny 1.5s ease-in-out infinite alternate; 
   text-decoration: none;
   color: white;
-}
+}*/
 
 .level{
   height:85vh;
