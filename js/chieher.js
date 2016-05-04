@@ -3,8 +3,8 @@ $(function(){
 	
 	//var num_row = $('.row').length;
 	//var mousewheel_count = 0;
-	var thirdFloorThresh = $('#thirdfloor').height() + 400;
-	//var scrollHeight = $('#thirdfloor').prop('scrollHeight');
+	var thirdFloorThresh = $('#intro').height()/2;
+	$('#public-photobox').css('top',$('#rooftop').height()+$('#intro').height()/16);
 	// $(window).on('mousewheel',function(e) {
 	// 	if(e.deltaY == -1 && mousewheel_count<num_row)
 	// 		mousewheel_count++;
@@ -18,8 +18,9 @@ $(function(){
 	$(window).scroll(function(){
 		var $this = $(this);
 		if($this.scrollTop()>thirdFloorThresh) //啟動三樓動畫
-			$('#thirdfloor img').attr('class',"animated bounceInLeft img-thumbnail img-lightbox");
+			$('#intro img').attr('class',"animated bounceInLeft img-thumbnail img-lightbox");
 		$('.img-lightbox').on('click', function () {
+			$('#intro').animatescroll();
 			$('.lightbox, #public-photobox').fadeIn(1000);
 			$('#public-photobox img').attr('src', $(this).attr('src'));
 			$('#public-photobox .panel-heading').html($(this).attr('alt'));
