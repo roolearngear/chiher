@@ -5,6 +5,7 @@ $(function(){
 	//var mousewheel_count = 0;
 	var thirdFloorThresh = $('#intro').height()/2;
 	$('#public-photobox').css('top',$('#rooftop').height()+$('#intro').height()/16);
+
 	// $(window).on('mousewheel',function(e) {
 	// 	if(e.deltaY == -1 && mousewheel_count<num_row)
 	// 		mousewheel_count++;
@@ -34,7 +35,15 @@ $(function(){
 		$('.lightbox').click(function () {
 			$(this).fadeOut(1000);
 			$('#public-photobox').fadeOut(1000);
+			$('.flipbook-viewport').fadeOut(1000);
 		});
+	});
+
+	$('.diagonal1').on('click',function(){
+		$('#product').animatescroll();
+		$('.flipbook-viewport').css('top',$('#rooftop').height()+$('#intro').height());
+		$('.lightbox, .flipbook-viewport').fadeIn(1000);
+
 	});
 });
 
