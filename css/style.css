@@ -56,9 +56,7 @@
 
 .img-lightbox{
   cursor: pointer;
-}
-.img-none{
-  display: none;
+  opacity: 0.5;
 }
 
 .lightbox

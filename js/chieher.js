@@ -1,6 +1,10 @@
 $(function(){
 	loadApp();
-	
+	$('.img-lightbox').on('mouseenter', function () {
+		$(this).stop(true, true).animate({ opacity: 1 }, 200);
+	}).on('mouseleave', function () {
+		$(this).stop(true, true).animate({ opacity: 0.5 }, 500);
+	});
 	//var num_row = $('.row').length;
 	//var mousewheel_count = 0;
 	var thirdFloorThresh = $('#intro').height()/2;
@@ -19,13 +23,8 @@ $(function(){
 	$(window).scroll(function(){
 		var $this = $(this);
 		if($this.scrollTop()>thirdFloorThresh) //啟動三樓動畫
-			$('#intro img').attr('class',"animated bounceInLeft img-thumbnail img-lightbox");
-		$('img-lightbox').mouseover(function (argument) {
-			$(this).css('opacity',1);
-		});
-		$('img-lightbox').mouseout(function(){
-			$(this).css('opacity',0.7);
-		});
+			$('#intro img').addClass('animated bounceInLeft');
+		
 		$('.img-lightbox').on('click', function () {
 			$('#intro').animatescroll();
 			$('.lightbox, #public-photobox').fadeIn(1000);
