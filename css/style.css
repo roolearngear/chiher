@@ -51,6 +51,7 @@
 
 .level{
   height:85vh;
+  width: 100%;
 }
 
 .img-lightbox{
@@ -99,7 +100,33 @@
   width: 100%
 }
 
+#product img{
+  position: absolute;
+  height: 70vh;
+  width: 30vw;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.diagonal1{
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 66%);
+clip-path: polygon(0 0, 100% 0, 100% 20%, 0 66%);
+}
+
+.diagonal2{
+-webkit-clip-path: polygon(0 66%, 100% 25%, 100% 66%, 0 100%);
+clip-path: polygon(0 66%, 100% 25%, 100% 66%, 0 100%);
+}
+
+.diagonal3{
+-webkit-clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
+clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
+}
+
 .flipbook-viewport{
+  display: none;
+  z-index: 100;
+  position: absolute;
   overflow:hidden;
   width:100%;
   height:100%;
