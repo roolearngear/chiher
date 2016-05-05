@@ -39,7 +39,7 @@ $(function(){
 		});
 	});
 
-	$('.diagonal1').on('click',function(){
+	$('.diagonal1,.diagonal2,.diagonal3').on('click',function(){
 		$('#product').animatescroll();
 		$('.flipbook-viewport').css('top',$('#rooftop').height()+$('#intro').height());
 		$('.lightbox, .flipbook-viewport').fadeIn(1000);
