@@ -112,13 +112,13 @@
 }
 
 .flipbook-viewport .flipbook{
-  width:45vw;
-  height:30vw;
+  /*width:45vw;*/
+  /*height:30vh;*/
 }
 
 .flipbook-viewport .page{
-  width:22.5vw;
-  height:30vw;
+  /*width:22.5vw;*/
+  /*height:30vh;*/
   background-color:white;
   background-repeat:no-repeat;
   background-size:100% 100%;
