@@ -5,6 +5,12 @@ $(function(){
 	var thirdFloorThresh = $('#intro').height()/2;
 	$('#public-photobox').css('top',$('#rooftop').height()+$('#intro').height()/16);
 
+	$('#contact i').on('mouseenter',function () {
+		$(this).addClass('animated shake');
+	}).on('mouseleave',function (){
+		$(this).removeClass('animated shake');
+	});
+
 	$('.img-lightbox').on('mouseenter', function () {//滑鼠移入
 		$(this).stop(true, true).animate({ opacity: 1 }, 200);
 	}).on('mouseleave', function () {//滑鼠移出

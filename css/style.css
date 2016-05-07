@@ -149,13 +149,13 @@ clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
 }
 
 .flipbook-viewport .flipbook{
-  /*width:45vw;*/
-  /*height:30vh;*/
+  width:80vw;
+  height:30vh;
 }
 
 .flipbook-viewport .page{
-  /*width:22.5vw;*/
-  /*height:30vh;*/
+  width:40vw;
+  height:30vh;
   background-color:white;
   background-repeat:no-repeat;
   background-size:100% 100%;
@@ -191,6 +191,15 @@ clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
   -ms-box-shadow:0 0 20px #ccc;
   box-shadow:0 0 20px #ccc;
 }
+
+.turn-around {
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);   /* IE 9 */
+  -moz-transform:rotate(180deg);  /* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg);  /* Opera */
+}
+
 
 
 /*keyframe*/
