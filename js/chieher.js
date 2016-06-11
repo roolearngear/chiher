@@ -6,12 +6,15 @@ $(function(){
 	$('#public-photobox').css('top',$('#rooftop').height()+$('#intro').height()/16);
 
 
-
-	$('.img-lightbox').on('mouseenter', function () {//滑鼠移入
+	$('.img-lightbox').hover(
+	function () {//滑鼠移入
 		$(this).stop(true, true).animate({ opacity: 1 }, 200);
-	}).on('mouseleave', function () {//滑鼠移出
+	}, 
+	function () {//滑鼠移出
 		$(this).stop(true, true).animate({ opacity: 0.5 }, 500);
 	});
+
+
 	$('.img-lightbox').on('click', function () {//點選開啟lightbox mode
 			$('#intro').animatescroll();
 			$('.lightbox, #public-photobox').fadeIn(1000);
@@ -78,11 +81,14 @@ $(function(){
 	});
 
 	//contact area
-	$('#contact i').on('mouseenter',function () {
+	$('#contact i').hover(
+	function () {
 		$(this).addClass('animated tada');
-	}).on('mouseleave',function (){
+	},
+	function (){
 		$(this).removeClass('animated tada');
 	});
+
 });
 
 

@@ -16,12 +16,12 @@
   display: inline-block;
 }*/
 
-#rooftop{
+/*#rooftop{
   background-image: url(../img/workshop.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: antiquewhite;
-}
+}*/
 
 #product{
   /*background-image: url(../img/infographic.png);
@@ -108,7 +108,8 @@
   background-color: #E1E1E1;
   height: 5vh;
   position: fixed;
-  width: 100%
+  width: 100%;
+  opacity:0.9;
 }
 
 #product img{
