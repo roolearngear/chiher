@@ -52,7 +52,7 @@
 }
 
 .level{
-  height:85vh;
+  height:720px;
   width: 100%;
 }
 
@@ -78,6 +78,12 @@
     padding-top: 5px;
     padding-left: 2px;
 }
+
+.intro-block{
+  background-color:antiquewhite;
+  height:250px;
+}
+
 
 .title{
  text-align: center;
@@ -109,30 +115,29 @@
   height: 5vh;
   position: fixed;
   width: 100%;
-  opacity:0.9;
 }
 
 #product img{
   position: absolute;
-  height: 70vh;
-  width: 30vw;
+  height: 438px;
+  width: 340px;
   cursor: pointer;
   overflow: hidden;
 }
 
 .diagonal1{
--webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 66%);
-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 66%);
+-webkit-clip-path: polygon(0 0, 0 74%, 68% 0);
+clip-path: polygon(0 0, 0 74%, 68% 0);
 }
 
 .diagonal2{
--webkit-clip-path: polygon(0 66%, 100% 25%, 100% 66%, 0 100%);
-clip-path: polygon(0 66%, 100% 25%, 100% 66%, 0 100%);
+-webkit-clip-path: polygon(68% 0, 100% 0, 100% 26%, 32% 100%, 0 100%, 0 74%);
+clip-path: polygon(68% 0, 100% 0, 100% 26%, 32% 100%, 0 100%, 0 74%);
 }
 
 .diagonal3{
--webkit-clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
-clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
+-webkit-clip-path: polygon(100% 26%, 32% 100%, 100% 100%);
+clip-path: polygon(100% 26%, 32% 100%, 100% 100%);
 }
 
 .flipbook-viewport{
@@ -273,4 +278,5 @@ clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
                0 0 75px #FFDD1B;
   }
 }
+
 

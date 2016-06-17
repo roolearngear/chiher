@@ -14,6 +14,14 @@ $(function(){
 		$(this).stop(true, true).animate({ opacity: 0.5 }, 500);
 	});
 
+	$('.intro-block').hover(//change color
+		function(){
+			$(this).css("background-color","yellow");
+		},
+		function(){
+			$(this).css("background-color","antiquewhite");
+		});
+
 
 	$('.img-lightbox').on('click', function () {//點選開啟lightbox mode
 			$('#intro').animatescroll();
