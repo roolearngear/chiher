@@ -28,6 +28,13 @@ $(function(){
 		//$('#public-photobox .panel-heading').html($(this).attr('alt'));//載入標題
 	});
 
+	$('#product img').hover(
+		function(){
+			$(this).next().show();
+		},
+		function(){
+			$(this).next().hide();
+		});
 
 	// $('.img-lightbox').on('click', function () {//點選開啟lightbox mode
 	// 		$('#intro').animatescroll();

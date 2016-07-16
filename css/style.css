@@ -30,9 +30,9 @@
 }
 
 #nav-level{
-  position:absolute;
+/*   position:absolute;
   margin:auto;
-  margin-left: 35vw;
+  margin-left: 35vw; */
 }
 
 #nav-level a{
@@ -40,7 +40,7 @@
   font-family: arial;
   /*font-family: 'Press Start 2P', cursive;*/
   font-size: 30px;
-  margin-left: 2vw
+  margin-left: 2vw;
 }
 
 #nav-level a:hover{
@@ -49,6 +49,18 @@
   animation: shiny 1.5s ease-in-out infinite alternate; 
   text-decoration: none;
   color: white;
+}
+
+#myCarousel {
+  width:70vw;
+  margin-left:15vw;
+  height:70vh;
+  margin-top:15vh;
+}
+
+#myCarousel img {
+      height:70vh;
+      width:70vw;
 }
 
 .level{
@@ -81,7 +93,29 @@
 
 .intro-block{
   background-color:antiquewhite;
-  height:250px;
+  height:40vh;
+  width:25vw;
+  position:absolute;
+}
+
+#product .product-block {
+  position:relative;
+  height:25vh;
+  width:55vw;
+  margin-left:10vw;
+  margin-top:10vh;
+}
+#product img{
+  position: absolute;
+  height: 25vh;
+  width: 20vw;
+  cursor: pointer;
+  overflow: hidden;
+}
+#product .product-descrption {
+  word-break:break-all;
+  margin-left:25vw;
+  display:none;
 }
 
 
@@ -118,13 +152,19 @@
   width: 100%;
 }
 
-#product img{
-  position: absolute;
-  height: 438px;
-  width: 340px;
-  cursor: pointer;
-  overflow: hidden;
+#safesys .safe-block {
+  position:absolute;
+  margin-left:26vw;
+
 }
+
+#safesys img {
+  width:16vw;
+  height:45vh;
+  position:relative;
+}
+
+
 
 .diagonal1{
 -webkit-clip-path: polygon(0 0, 0 74%, 68% 0);
